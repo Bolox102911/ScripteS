@@ -24,11 +24,6 @@ local repo = 'https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main
     -- Trolling group box
     local TrollingGroupBox = Tabs.Extra:AddLeftGroupbox('Trolling') -- New Trolling GroupBox
 
-    -- Main settings group box under UI Settings
-    local MainGroup = Tabs.UI_Settings:AddLeftGroupbox('Main Options')
-    MainGroup:AddButton('Unload', function() Library:Unload() end)
-    MainGroup:AddLabel('Close menu with the key:'):AddKeyPicker('MenuKeybind', { Default = 'End', NoUI = true, Text = 'Menu Key' })
-
     -- Add the custom cursor toggle
     MainGroup:AddToggle('ShowCustomCursor', {
         Text = 'Show Custom Cursor',
