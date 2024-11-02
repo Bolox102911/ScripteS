@@ -19,7 +19,6 @@ local repo = 'https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main
     local LeftGroupBox = Tabs.Main:AddLeftGroupbox('Silent Aim')
     local ESPGroupBox = Tabs.Main:AddLeftGroupbox('ESP')
     local FOVGroupBox = Tabs.Extra:AddLeftGroupbox('Field of View Settings') -- Group box for FOV
-    local ChangeDistanceGroupBox = Tabs.Extra:AddLeftGroupbox('Change Distance') -- New group box for Camera Max Zoom
 
     -- Trolling group box
     local TrollingGroupBox = Tabs.Extra:AddLeftGroupbox('Trolling') -- New Trolling GroupBox
@@ -28,22 +27,6 @@ local repo = 'https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main
     local MainGroup = Tabs.UI_Settings:AddLeftGroupbox('Main Options')
     MainGroup:AddButton('Unload', function() Library:Unload() end)
     MainGroup:AddLabel('Close menu with the key:'):AddKeyPicker('MenuKeybind', { Default = 'End', NoUI = true, Text = 'Menu Key' })
-
-    -- Add the custom cursor toggle
-    MainGroup:AddToggle('ShowCustomCursor', {
-        Text = 'Show Custom Cursor',
-        Default = false,
-        Tooltip = 'Enable this to show the custom cursor.',
-        Callback = function(Value)
-            if Value then
-                -- Logic to show custom cursor
-                UserInputService.MouseIconId = "rbxassetid://123456789" -- Replace with your custom cursor ID
-            else
-                -- Logic to hide custom cursor and revert to default
-                UserInputService.MouseIconId = ""
-            end
-        end,
-    })
 
     -- Button to freeze the screen for 5 seconds
     TrollingGroupBox:AddButton({
@@ -310,22 +293,6 @@ local repo = 'https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main
                 Icon = "",
                 Duration = 5
             })
-        end,
-    })
-
-    -- Add the custom cursor toggle to UI Settings
-    MenuGroup:AddToggle('ShowCustomCursor', {
-        Text = 'Show Custom Cursor',
-        Default = false,
-        Tooltip = 'Enable this to show the custom cursor.',
-        Callback = function(Value)
-            if Value then
-                -- Logic to show custom cursor
-                UserInputService.MouseIconId = "rbxassetid://123456789" -- Replace with your custom cursor ID
-            else
-                -- Logic to hide custom cursor and revert to default
-                UserInputService.MouseIconId = ""
-            end
         end,
     })
 
