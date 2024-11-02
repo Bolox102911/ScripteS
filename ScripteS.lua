@@ -10,7 +10,7 @@ local foundGame = false
 for id, url in pairs(games) do
     if game.PlaceId == id then
         foundGame = true
-        Notification.Notify("ScripteS Hub", "Loading ...", "rbxassetid://4483345998")
+        Notification.Notify("ScripteS Hub", "Loading...", "rbxassetid://4483345998")
         loadstring(game:HttpGet(url))()
         break
     end

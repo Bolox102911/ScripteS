@@ -10,7 +10,7 @@ support server:
 https://discord.gg/DDvgerpcau
 ```
 Current supported games:
-```diff
+```
 Grass Cutting Incremental
 Frontlines
 ```
