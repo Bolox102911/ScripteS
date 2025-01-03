@@ -14,6 +14,9 @@ local Window = Library:CreateWindow({
     MenuFadeTime = 0
 })
 
+    shared.NotifyStyle = "Linoria"
+    shared.NotifyVolume = 2
+    shared.Notify = require("Notify")
 
 -- Add Tabs
 local Tabs = {
