@@ -13,8 +13,3 @@ for ids, url in next, games do
         break
     end
 end
-
-if not foundGame then
-    local currentPlaceId = game.PlaceId
-    Notification.Notify("ScripteS Hub", "Wrong game. Your current game ID is: " .. tostring(currentPlaceId), "rbxassetid://4483345998")
-end
