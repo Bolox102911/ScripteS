@@ -6,12 +6,9 @@ local games = {
     [15277359883] = "https://raw.githubusercontent.com/Bolox102911/ScripteS/refs/heads/main/scripts/GrassCuttingSim/Script.lua"
 }
 
-local foundGame = false
-
-for id, url in pairs(games) do
-    if game.PlaceId == id then
-        foundGame = true
-        Notification.Notify("ScripteS Hub", "Loading ...", "rbxassetid://4483345998")
+for ids, url in next, games do
+    if table.find(ids, game.PlaceId) then
+        Notification.Notify("Nebula Hub", "Loading ...","rbxassetid://4483345998");
         loadstring(game:HttpGet(url))()
         break
     end
