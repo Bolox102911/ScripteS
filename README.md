@@ -13,6 +13,7 @@ Current supported games:
 ```
 Grass Cutting Incremental
 Frontlines
+Grass Cutting Simulator
 ```
 
 contributors: Alvinyuen123
