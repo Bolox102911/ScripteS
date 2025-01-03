@@ -2,7 +2,8 @@ local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/Iri
 
 local games = {
     [9292879820] = "https://raw.githubusercontent.com/Bolox102911/ScripteS/refs/heads/main/scripts/GrassCutting.lua",
-    [5938036553] = "https://raw.githubusercontent.com/Bolox102911/ScripteS/refs/heads/main/scripts/Frontlines.lua"
+    [5938036553] = "https://raw.githubusercontent.com/Bolox102911/ScripteS/refs/heads/main/scripts/Frontlines.lua",
+    [15277359883] = "https://raw.githubusercontent.com/Bolox102911/ScripteS/refs/heads/main/scripts/GrassCuttingSim.lua"
 }
 
 local foundGame = false
