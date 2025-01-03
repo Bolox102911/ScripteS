@@ -8,7 +8,7 @@ local games = {
 
 for ids, url in next, games do
     if table.find(ids, game.PlaceId) then
-        Notification.Notify("Nebula Hub", "Loading ...","rbxassetid://4483345998");
+        Notification.Notify("ScripteS", "Loading ...","rbxassetid://4483345998");
         loadstring(game:HttpGet(url))()
         break
     end
